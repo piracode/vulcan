@@ -1,2 +1,30 @@
 // Place your Sass imports here...
+@use "variables" as *;
+@use "about";
+@use "caroussel";
+@use "forms";
+@use "map";
+@use "navigation";
+@use "products";
+@use "reset";
+@use "header";
+@use "footer";
 
+// Typography styles
+
+body {
+  font-family: $body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font;
+}
+
+p {
+  font-family: $body-font;
+}
