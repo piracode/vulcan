@@ -66,10 +66,11 @@
         <figure>
           <img
             srcset="
-              images/machine-02-300x274.png,
-              images/machine-02-768x702.png,
-              images/machine-02-912x834.png
+              /images/machine-02-300x274.png,
+              /images/machine-02-768x702.png,
+              /images/machine-02-912x834.png
             "
+            src="/images/machine-02-912x834.png"
             alt="Screening and handling machinery"
           />
           <figcaption>Screenings Handling</figcaption>
@@ -106,12 +107,52 @@
 
       <!--Forms-->
       <form>
+        <h2>Product Advisor</h2>
+        <fieldset>
+        <legend>Find your project's perfect fit.</legend>
+        
         <label for="select-box">Product Type</label>
         <select id="select-box" name="products">
+          <option value="placeholder">Select</option>
           <option value="option1">Option 1</option>
           <option value="option2">Option 2</option>
           <option value="option3">Option 3</option>
         </select>
+
+        <label for="select-box">Screen Location</label>
+        <select id="select-box" name="products">
+          <option value="placeholder">Select</option>
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+
+        <label for="select-box">Flow Type</label>
+        <select id="select-box" name="products">
+          <option value="placeholder">Select</option>
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+
+        <label for="select-box">Channel Depth</label>
+        <select id="select-box" name="products">
+          <option value="placeholder">Select</option>
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+
+        <label for="select-box">Channel Width</label>
+        <select id="select-box" name="products">
+          <option value="placeholder">Select</option>
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+        </fieldset>
+
+        <button class="find-product" id="find-product">Find my product</button>
       </form>
 
 	  <section>
