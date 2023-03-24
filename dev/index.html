@@ -9,10 +9,13 @@
     <!-- Put Google Fonts Here -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/29644de948.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- end Google Fonts -->
 
@@ -23,6 +26,23 @@
     <!-- Put your HTML code here... -->
 
     <header>
+    <div class="slides-container">
+      <div class="slide">
+        <img src="images/header-slider-img-01.jpg" alt=" Header slide image 1">
+      </div>
+      <div class="slide">
+        <img src="images/header-slider-img-02.jpg" alt="Header slide image 2">
+      </div>
+      <div class="slide">
+        <img src="images/header-slider-img-03.jpg" alt="Header slide image 3">
+      </div>
+      <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    
+      <nav>
       <ul>
         <li><a href="#">About</a></li>
         <li><a href="#">Products</a></li>
@@ -31,14 +51,15 @@
         <li><a href="#">News</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
+    </nav>
       <section class="slideshow">
         <h1>
           We design and fabricate indestructible wasterwater screens. Enough
           Said.
         </h1>
-        <p>Veiw products</section>p>
+        <p>View products</section>
         <p></p>
-        <p>Veiw Services</p>
+        <p>View Services</p>
       </section>
     </header>
 
@@ -155,16 +176,85 @@
         <button class="find-product" id="find-product">Find my product</button>
       </form>
 
-	  <section>
-
-	  </section>
+	  <section class="about">
+      <!-- Not sure if to use H2 or H3 here, it depends how we lay out the rest of the HTML -->
+      <h2 class="about__heading">Delivering clean, safe water since 1975. Refreshing indeed.</h2>
+      <h3 class="about__subheading">Vulcan wastewater screening equipment has played a vital role in protecting the water supply of more than 900 cities and communities throughout the world. </h3>
+      <p class="about__button"><a href="#">About us</a></p>
+      </section>
+	  
+      <!-- Not sure if to put a section here or if to have articles. Unsure what's semantically correct. Will ahve to check the entire HTML to make sure we are right -->
+    <section class="about__video">
+      <iframe src="https://player.vimeo.com/video/183929811" frameborder="1" allowfullscreen></iframe>
+    </section>
+    <section class="contact">
+      <article class="newsletter">
+        <p class="newsletter__heading">Stay in the know. Sign up for our newsletter.</p>
+        <form action="submit.php" method="POST">
+          <label for="email">Enter your email:</label>
+          <input type="email" id="email" name="email" placeholder="example@example.com">
+          <button type="submit">Submit</button>
+        </form>
+      </article>
+      <article class="contact__section">
+        <!-- h2 or h3 or h4? -->
+        <h3 class="contact__heading">Ready to spec vulcan for your project?</h3>
+        <p class="contact__button"><a href="#">Contact us</a></p>
+      </article>
+      <article class="find__section">
+        <img src="images/map.jpg" alt="USA map" class="find__img">
+        <!-- h2 or h3 or h4? -->
+        <h3 class="find__heading">Installed in a city near you</h3>
+        <p class="find__button"><a href="#">Find a vulcan install</a></p>
+      </article>
+    </section>
 
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="images/logo-white-vulcan.svg" alt="Vulcan logo" class="vulcan-logo">
+      </div>
+      <nav class="footer__nav">
+        <ul class="footer__links">
+          <!-- Facabook link and icon -->
+          <li class="footer__link footer__link-facebook">
+            <a href="https://www.facebook.com">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <!-- Linkedlin link and icon -->
+          <li class="footer__link footer__link-linkedin">
+            <a href="https://www.linkedin.com">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <!-- Phone icon -->
+          <li class="footer__link footer__link-number">
+            <!-- The circle phone doesnt work  -->
+            <!-- <i class="fa-regular fa-circle-phone"></i> -->
+            <i class="fa-sharp fa-solid fa-phone"></i>
 
-    <!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
-    <script src="scripts/libs/jquery/jquery-3.6.0.min.js"></script>
+            <a href="tel:712-642-2755">+1 712-642-2755</a>
+           </li>
+           <li class="footer__link footer__link-mail">
+            <!-- The circle envelope doesnt work -->
+            <!-- <i class="fa-regular fa-circle-envelope"></i> -->
+            <i class="fa-sharp fa-solid fa-envelope"></i>
+            <a
+            href="mailto:mvillamartin@my.bcit.ca"
+            target="_blank"
+            rel="noopener"
+          >
+            Contact Us
+          </a>
+        </li>
+        </ul>
+      </nav>
+      <p class="footer__copyright">Copyright 2017. All Right Reserved</p>
+    </footer>
+
+
     <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
     <script src="scripts/script.min.js?cachebuster=1"></script>
     <!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->
