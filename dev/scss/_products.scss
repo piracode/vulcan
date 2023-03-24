@@ -1,4 +1,8 @@
 .machines{
+    h2{
+        text-transform: uppercase;
+    }
+   
     h2, p{
         text-align: center;
         margin-left:3rem;
@@ -8,14 +12,15 @@
 
 
 figure{
-    justify-content: center;
     display:flex;
     flex: 0 1 auto;
     justify-content: space-between;
     align-items: center;
     margin:0.5rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
     img{
-        width: 50%; 
+        width: 60%; 
         padding-left: 2rem; 
     } 
     a{
@@ -26,9 +31,23 @@ figure{
     } 
     figcaption{
         text-align: left;
-        width: 50%;
+        // width: 50%;
+        inline-size: 40%;
+        overflow-wrap: break-word;
         padding-left:1rem;
+        padding-right:1rem;
+        font-size: 22px;
     }
+}
+
+.machine-2{
+    border-top: 1px solid rgba(32, 32, 32, 0.266);
+}
+.machine-3{
+    border-top: 1px solid rgba(32, 32, 32, 0.266) ;
+}
+.machine-4{
+    border-top: 1px solid rgba(32, 32, 32, 0.266) ;
 }
 
 .machine-wrapper{
