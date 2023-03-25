@@ -22,13 +22,13 @@
 
   &__heading {
     text-transform: uppercase;
-    font-size: 2.2rem;
+    font-size: $heading-title;
     padding-top: 8rem;
   }
   &__subheading {
     font-weight: 400;
     font-size: 1.2rem;
-    padding: 0 4rem;
+    padding: 2rem 4rem 4rem;
   }
 
   &__button {
@@ -42,25 +42,29 @@
   }
 
   &__video {
+    // How to add more padding around the video? and still ahve the green part on phone?
     background-color: $brand-color;
-    padding: $default-padding;
-    // display: flex;
+    padding: 4rem 1.4rem;
+    display: flex;
     justify-content: center;
     align-items: center;
 
     iframe {
-      border: 1.5rem solid $brand-color-dark;
+      border: 1.2rem solid $brand-color-dark;
       background-color: #045404;
+      width: 85%;
+      // height: 90%;
     }
   }
 }
 
 .newsletter {
   background-color: $brand-color-light;
-  padding: 1rem 0.7rem;
+  padding: 2rem 0.7rem;
 
   &__heading {
     font-size: 1.2rem;
+    color: $brand-color-dark;
     text-align: center;
   }
 
@@ -92,6 +96,26 @@
   }
 }
 
+.find {
+  background-image: url("/dev/images/map.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  padding: $default-padding;
+
+  // Do line break for the heading
+  &__heading {
+    text-transform: uppercase;
+    font-size: $heading-title;
+    color: $grey;
+  }
+
+  // Need to overwrite the anchor tag on navigation
+  &__button {
+    // color: grey;
+  }
+}
 .footer {
   &__link-mail {
     i.fa-sharp.fa-solid.fa-envelope {
