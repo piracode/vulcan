@@ -1,0 +1,51 @@
+$nav-bg-color: rgba(128, 128, 128, 0.603);
+#main-nav-list {
+    display: none;
+  
+}
+
+#main-nav-list.toggled {
+    display: block;
+}
+
+.m-button  {
+    display: block;
+    position:relative;
+    background-color: transparent;
+    border: 0;
+    fill: white;
+    z-index:8;
+}
+
+.main-nav{
+    text-align: right; 
+    position: absolute;  
+    z-index:1; 
+    right: 2%;
+    top: 4%;
+      
+} 
+a:hover {
+    color: #ddd;
+}
+
+nav ul{
+    position: absolute;
+    text-align: right;  
+    font-size: 1.0rem;
+    padding-right:5px;
+    z-index:2; 
+    right: 0;
+
+}
+
+nav li,a{
+    text-decoration: none;
+    color:white;
+}
+
+nav li{
+    display: inline;
+    line-height: 1.5;
+    padding-top: 0;
+}   
