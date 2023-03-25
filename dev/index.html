@@ -66,73 +66,117 @@
     <main>
       <section class="machines">
         <h2>Customized Per Order</h2>
-			<p>
-			Just as no two treatment plants are the same, no two of our screening,
-			grit handling or sludge thickening products are either.We'll help
-			determine exactly what you need.
-			</p>
-        <figure>
+          <p>
+          Just as no two treatment plants are the same, no two of our screening,
+          grit handling or sludge thickening products are either.We'll help
+          determine exactly what you need.
+          </p>
+        <div class="machine-wrapper">
+          <figure class="machine-1">
+            <img
+              srcset="
+                /images/machine-01-300x274.png 300w,
+                /images/machine-01-768x702.png 768w,
+                /images/machine-01-912x834.png 912w
+              "
+              alt="Screening machinery"
+            />
+            <figcaption>Screening</figcaption>
+            <a href="#">View Selection</a>   <!--figure a not displayed when min width is less than-->
+          </figure>
+
+          <figure class= "machine-2">
+            <img
+              srcset="
+                /images/machine-02-300x274.png 300w,
+                /images/machine-02-768x702.png 768w,
+                /images/machine-02-912x834.png 912w
+              "
+              src="/images/machine-02-912x834.png"
+              alt="Screening and handling machinery"
+            />
+            <figcaption>Screenings Handling</figcaption>
+            <a href="#">View Selection</a>
+          </figure>
+
+          <figure class="machine-3">
+            <img
+              srcset="
+                /images/machine-03-300x274.png 300w,
+                /images/machine-03-768x702.png 768w,
+                /images/machine-03-912x834.png 912w
+              "
+              alt="Grit handling machinery"
+            />
+          <figcaption>Grit Handling</figcaption>
+          <a href="#">View Selection</a>
+            </figure>
+
+        <figure class="machine-4">
           <img
-            srcset="
-              images/machine-01-300x274.png,
-              images/machine-01-768x702.png,
-              images/machine-01-912x834.png
-            "
-            alt="Screening machinery"
+          srcset="
+            /images/machine-04-300x274.png 300w,
+            /images/machine-04-768x702.png 768w,
+            /images/machine-04-912x834.png 912w
+          "
+          alt="Sludge thickening machinery"
           />
-          <figcaption>Screening</figcaption>
+          <figcaption>Sludge Thickening</figcaption>
           <a href="#">View Selection</a>
         </figure>
-
-        <figure>
-          <img
-            srcset="
-              images/machine-02-300x274.png,
-              images/machine-02-768x702.png,
-              images/machine-02-912x834.png
-            "
-            alt="Screening and handling machinery"
-          />
-          <figcaption>Screenings Handling</figcaption>
-          <a href="#">View Selection</a>
-        </figure>
-
-        <figure>
-          <img
-            srcset="
-              images/machine-03-300x274.png,
-              images/machine-03-768x702.png,
-              images/machine-03-912x834.png
-            "
-            alt="Grit handling machinery"
-          />
-		  <figcaption>Grit Handling</figcaption>
-		  <a href="#">View Selection</a>
-        </figure>
-
-		<figure>
-			<img
-			srcset="
-				images/machine-04-300x274.png,
-				images/machine-04-768x702.png,
-				images/machine-04-912x834.png
-			"
-			alt="Sludge thickening machinery"
-			/>
-			<figcaption>Sludge Thickening</figcaption>
-			<a href="#">View Selection</a>
-		</figure>
-      </section>
+    </div>
+    </section>
 
 
       <!--Forms-->
-      <form>
+      <form class="product-form">
+        <h2>Product Advisor</h2>
+          <p>Find your project's perfect fit.</p>
+        <fieldset class="dropdown-inputs">
+        <!-- <legend>Find your project's perfect fit.</legend> -->
+        
         <label for="select-box">Product Type</label>
         <select id="select-box" name="products">
+          <option value="placeholder" disabled selected hidden>Select</option>
           <option value="option1">Option 1</option>
           <option value="option2">Option 2</option>
           <option value="option3">Option 3</option>
         </select>
+
+        <label for="select-box">Screen Location</label>
+        <select id="select-box" name="products">
+          <option value="placeholder" disabled selected hidden>Select</option>
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+
+        <label for="select-box">Flow Type</label>
+        <select id="select-box" name="products">
+          <option value="placeholder" disabled selected hidden>Select</option>
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+
+        <label for="select-box">Channel Depth</label>
+        <select id="select-box" name="products">
+          <option value="placeholder" disabled selected hidden>Select</option>
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+
+        <label for="select-box">Channel Width</label>
+        <select id="select-box" name="products">
+          <option value="placeholder" disabled selected hidden>Select</option>
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+        </fieldset>
+
+        <button class="find-product" id="find-product">Find my product</button>
       </form>
 
 	  <section class="about">

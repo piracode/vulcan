@@ -1,0 +1,63 @@
+.machines{
+    background-image: url(../images/wave-blue-dark.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:contain;
+    h2{
+        text-transform: uppercase;
+    }
+   
+    h2, p{
+        text-align: center;
+        margin-left:3rem;
+        margin-right: 3rem;
+    }
+}
+
+
+figure{
+    display:flex;
+    flex: 0 1 auto;
+    justify-content: space-between;
+    align-items: center;
+    margin:0.5rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    img{
+        width: 60%; 
+        padding-left: 2rem; 
+    } 
+    a{
+        display:none;
+        @media (min-width: 30rem) {
+            display:contents;
+        }
+    } 
+    figcaption{
+        text-align: left;
+        // width: 50%;
+        inline-size: 40%;
+        overflow-wrap: break-word;
+        padding-left:1rem;
+        padding-right:1rem;
+        font-size: 22px;
+    }
+}
+
+.machine-2{
+    border-top: 1px solid rgba(32, 32, 32, 0.266);
+}
+.machine-3{
+    border-top: 1px solid rgba(32, 32, 32, 0.266) ;
+}
+.machine-4{
+    border-top: 1px solid rgba(32, 32, 32, 0.266) ;
+    padding-bottom:4rem;
+}
+
+.machine-wrapper{
+    @media (min-width:62rem){
+    display:flex;
+    flex: 0 1 auto;
+    }
+}
