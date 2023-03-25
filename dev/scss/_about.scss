@@ -1,23 +1,51 @@
 @use "variables" as *;
 
 .about {
-  //   background-color: $brand-color;
+  // This margin top should actually be a padding around the "find my product" CTA
+  // in the products section and also add the background dark color
+  margin-top: $default-padding; //and should be padding top and bottom instead of margin
+
+  padding-bottom: $default-padding;
+  text-align: center;
+  overflow: hidden;
   color: $color-white;
+  background-image: url("/dev/images/bg-section-about-us.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
 
   &__heading {
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2.2rem;
+    padding-top: 8rem;
+  }
+  &__subheading {
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 0 4rem;
+  }
+
+  &__button {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 900;
+    border: 2px solid $color-white;
+    width: fit-content;
+    padding: 1rem;
+    margin: 0 auto;
   }
 
   &__video {
     background-color: $brand-color;
-    padding: 6rem;
+    padding: $default-padding;
     display: flex;
     justify-content: center;
     align-items: center;
 
     iframe {
       border: 1.5rem solid $brand-color-dark;
+      background-color: #008000;
     }
   }
 }
