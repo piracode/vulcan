@@ -1,4 +1,8 @@
 .machines{
+    background-image: url(../images/wave-blue-dark.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:contain;
     h2{
         text-transform: uppercase;
     }
@@ -48,6 +52,7 @@ figure{
 }
 .machine-4{
     border-top: 1px solid rgba(32, 32, 32, 0.266) ;
+    padding-bottom:4rem;
 }
 
 .machine-wrapper{
