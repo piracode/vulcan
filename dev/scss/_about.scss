@@ -1,5 +1,10 @@
 @use "variables" as *;
 
+//About us and contact button us could be a mixins. (font size 1.2 which is the same font size for the submit btton)
+//I wonder if Submit and find my products could be one too even if not the same look
+
+//Remember the cursor pointer on each button or someting with an action
+
 .about {
   // This margin top should actually be a padding around the "find my product" CTA
   // in the products section and also add the background dark color
@@ -28,25 +33,62 @@
 
   &__button {
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 900;
     border: 2px solid $color-white;
     width: fit-content;
-    padding: 1rem;
+    padding: 0.75rem 2rem;
     margin: 0 auto;
   }
 
   &__video {
     background-color: $brand-color;
     padding: $default-padding;
-    display: flex;
+    // display: flex;
     justify-content: center;
     align-items: center;
 
     iframe {
       border: 1.5rem solid $brand-color-dark;
-      background-color: #008000;
+      background-color: #045404;
     }
+  }
+}
+
+.newsletter {
+  background-color: $brand-color-light;
+  padding: 1rem 0.7rem;
+
+  &__heading {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  & form.newsletter-form {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 0.5rem;
+  }
+
+  //If time find out how to use the descendant selector not to
+  //repeat the border none.
+
+  input {
+    border: none;
+    padding: 0.5rem;
+    grid-column: 1/2;
+  }
+
+  button {
+    background-color: $brand-color;
+    border: none;
+    color: $color-white;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    grid-column: 2/-1;
+    font-weight: 700;
+    font-size: 1.2rem;
   }
 }
 
