@@ -1,0 +1,60 @@
+@use "variables" as *;
+
+.footer {
+  // background-image: url("/dev/images/wave-blue-light.png");
+  background-image: url("../images/wave-blue-light.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  color: $color-white;
+
+  // padding: 5rem;
+
+  // &__wave {
+  //   position: relative;
+  //   width: 100%;
+  //   height: 100%;
+  //   object-fit: cover;
+  //   z-index: 1;
+
+  //   img {
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //   }
+  // }
+
+  text-transform: uppercase;
+
+  &__logo .vulcan-logo {
+    // width: 50%;
+    width: 8rem;
+    margin: 0 auto;
+    display: block;
+    padding: 1rem;
+  }
+  // background-position: right 20px top 0% / 30% auto;
+
+  &__nav {
+    padding-bottom: 1rem;
+  }
+  &__links {
+    position: static; // this is needed to overwritte the styles
+    //appplued in navigation header, remove if fixed.
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__copyright {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 3rem;
+  }
+}
