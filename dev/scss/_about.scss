@@ -139,8 +139,8 @@
 .contact {
   background-color: $brand-color-dark;
   padding: $default-padding 4rem;
-  position: relative;
-  z-index: 0;
+  // position: relative;
+  // z-index: -1;
 
   &__heading {
     color: $color-white;
@@ -166,13 +166,28 @@
 }
 
 .footer {
-  background-image: url("/dev/images/wave-blue-light.png");
-  // background-position: left;
-  background-position: left 55%;
-  position: relative;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
+  // background-image: url("/dev/images/wave-blue-light.png");
+  // background-repeat: no-repeat;
+  // background-position: left 55%;
+  // height: 100%;
+  // width: 100%;
+  // padding: 5rem;
+
+  // &__wave {
+  //   position: relative;
+  //   width: 100%;
+  //   height: 100%;
+  //   object-fit: cover;
+  //   z-index: 1;
+
+  //   img {
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //   }
+  // }
 
   &__logo .vulcan-logo {
     // width: 50%;
