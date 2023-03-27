@@ -1,8 +1,13 @@
 @use "variables" as *;
 
+.form{
+    background-color: $brand-color-dark;
+    padding-bottom:2rem;
+}
+
 .product-form{
     // margin:1rem;
-    background-color: $brand-color-dark;
+    
     color:white;
     h2{
         text-transform: uppercase;
