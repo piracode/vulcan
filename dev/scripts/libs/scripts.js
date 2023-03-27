@@ -36,5 +36,3 @@ const links  = document.getElementById( 'main-nav-list' );
 button.addEventListener( 'click', function() {
     links.classList.toggle( 'toggled' );
 } );
-
-//# sourceMappingURL=script.min.js.map
