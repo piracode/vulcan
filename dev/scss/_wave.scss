@@ -1,0 +1,53 @@
+@use 'mixins' as *;
+.wave-section{
+    position:relative;
+    overflow:hidden; 
+}
+
+.wave{
+    height: 160px;
+    width:90%;
+    position:absolute;
+    bottom:0;
+
+    .wave-img{
+        position: absolute;
+        width: 115%;
+        left: -19px;
+        bottom: -35px;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-image: url(../images/wave-blue-dark.png);
+        background-size: 160% 87%;
+    }
+    .wave-img-white{
+        position: absolute;
+        width: 115%;
+        left: -19px;
+        bottom: -35px;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-image: url(../images/wave-white.png);
+        background-size: 160% 87%;
+    }
+
+    @include mq(768){
+        .wave-img {
+            width: 120%;
+            left: 0;
+            bottom: 0;
+            //height: 100%;
+            background-position: bottom left;
+            background-size: 110% 91%;
+        }
+        .wave-img-white {
+            width: 120%;
+            left: 0;
+            bottom: 0;
+            //height: 100%;
+            background-position: bottom left;
+            background-size: 110% 91%;
+        }
+
+    }
+}

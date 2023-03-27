@@ -1,5 +1,6 @@
 // Place your Sass imports here...
 @use "variables" as *;
+@use "mixins" as *; 
 @use "about";
 @use "caroussel";
 @use "forms";
@@ -10,6 +11,7 @@
 @use "header";
 @use "footer";
 @use "contact";
+
 
 // Typography styles
 
