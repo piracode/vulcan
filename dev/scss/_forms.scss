@@ -1,8 +1,8 @@
-@use "variables";
+@use "variables" as *;
 
 .product-form{
     // margin:1rem;
-    background-color: #244a64;
+    background-color: $brand-color-dark;
     color:white;
     h2{
         text-transform: uppercase;
