@@ -43,11 +43,9 @@
   .newsletter {
     display: flex;
     &__heading {
-      color: red;
     }
 
     &__video {
-      background-color: red;
     }
   }
 }
@@ -93,7 +91,8 @@
 
 .contact {
   background-color: $brand-color-dark;
-  padding: $default-padding 4rem;
+  padding: $default-padding 4rem 11rem 4rem;
+  //   padding: 10rem 4rem;
   // position: relative;
   // z-index: -1;
 

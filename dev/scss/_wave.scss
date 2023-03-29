@@ -32,13 +32,13 @@
   }
   .wave-img-light-blue {
     position: absolute;
-    width: 115%;
-    left: -19px;
-    bottom: -35px;
+    width: 160%;
+    left: -203px;
+    bottom: -37px;
     height: 100%;
     background-repeat: no-repeat;
     background-image: url(../images/wave-blue-light.png);
-    background-size: 160% 87%;
+    background-size: 170% 77%;
   }
 
   @include mq(768) {
@@ -51,6 +51,14 @@
       background-size: 110% 70%;
     }
     .wave-img-white {
+      width: 120%;
+      left: 0;
+      bottom: 0;
+      //height: 100%;
+      background-position: bottom left;
+      background-size: 110% 70%;
+    }
+    .wave-img-light-blue {
       width: 120%;
       left: 0;
       bottom: 0;
