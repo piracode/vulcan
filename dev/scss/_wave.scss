@@ -41,23 +41,23 @@
     background-size: 170% 77%;
   }
 
-  @include mq(768) {
-    .wave-img {
-      width: 120%;
-      left: 0;
-      bottom: 0;
-      //height: 100%;
-      background-position: bottom left;
-      background-size: 110% 70%;
-    }
-    .wave-img-white {
-      width: 120%;
-      left: 0;
-      bottom: 0;
-      //height: 100%;
-      background-position: bottom left;
-      background-size: 110% 70%;
-    }
+    @include mq(768){
+        .wave-img {
+            width: 120%;
+            left: 0;
+            bottom: 0;
+            //height: 100%;
+            background-position: bottom left;
+            background-size: 110% 70%;
+        }
+        .wave-img-white {
+            width: 120%;
+            left: 0;
+            bottom: 0;
+            //height: 100%;
+            background-position: bottom left;
+            background-size: 110% 70%;
+        }
     .wave-img-light-blue {
       width: 120%;
       left: 0;
@@ -66,5 +66,24 @@
       background-position: bottom left;
       background-size: 110% 70%;
     }
-  }
+
+    }
+
+    @include mq(1440){
+        .wave-img {
+            width: 112%;
+            left: 0;
+            bottom: 0;
+            background-position: bottom left;
+            background-size: 102% 90%;
+        }
+        .wave-img-white {
+            width: 112%;
+            left: 0;
+            bottom: 0;
+            background-position: bottom left;
+            background-size: 102% 90%;
+        }
+
+    }
 }
