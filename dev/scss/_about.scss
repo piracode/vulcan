@@ -7,10 +7,6 @@
 //Remember the cursor pointer on each button or someting with an action
 
 .about {
-  // This margin top should actually be a padding around the "find my product" CTA
-  // in the products section and also add the background dark color
-  margin-top: $default-padding; //and should be padding top and bottom instead of margin
-
   padding-bottom: $default-padding;
   text-align: center;
   overflow: hidden;
@@ -40,6 +36,10 @@
     width: fit-content;
     padding: 0.75rem 2rem;
     margin: 0 auto;
+  }
+
+  &__button a {
+    color: $color-white;
   }
 
   &__video {
@@ -73,8 +73,14 @@
 @include mq(444) {
   .about {
     &__video {
+      padding: 3rem 4rem;
       width: 100%;
-      background-color: red;
+    }
+    iframe {
+      border: 1rem solid $brand-color-dark;
+      background-color: #045404;
+      width: 100%;
+      // height: 90%;
     }
   }
 }
