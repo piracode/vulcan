@@ -61,13 +61,10 @@
 @media (min-width: 47.8em) {
   .about {
     &__subheading {
-      // padding: 2rem 8rem 4rem 6rem;
-      padding: 10rem;
-      color: red;
+      padding: 2rem 8rem 4rem 6rem;
     }
 
     &__video {
-      background-color: red;
     }
   }
 }
