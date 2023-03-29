@@ -33,7 +33,10 @@ figure{
     }
     img{
         width: 60%; 
-        padding-left: 2rem; 
+        padding-left: 2rem;
+        @include mq (768){
+            width:80%;
+        } 
     } 
     a{
         color:black;
@@ -90,8 +93,9 @@ figure{
     border-top: 1px solid rgba(32, 32, 32, 0.266) ;
     padding-bottom:4rem;
     @include mq(768){
-        border:none;
-        padding-bottom: 0rem;
+        border: none;
+        padding-bottom: 1rem;
+        padding-top: 0rem;
  
     }
 }
