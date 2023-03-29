@@ -1,5 +1,8 @@
 @use "variables" as *;
 //navigation//
+.buttons a {
+    text-decoration: none;
+    color: $color-white;
 .buttons p {
   text-transform: uppercase;
   font-size: 0.5rem;
