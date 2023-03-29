@@ -27,7 +27,10 @@ figure{
     @include mq (768){
         flex-direction: column;
         align-items: center;
-        padding-bottom:2rem;
+        justify-content: space-evenly;
+        gap:10px;
+
+        // padding-bottom:2rem;
         
     }
     img{
@@ -37,16 +40,13 @@ figure{
     a{
         color:black;
         display:none;
-    }
-    @include mq (768){
-        a{
+        @include mq(768){
             display:block;
-            padding-left:2rem;
-        
-        } 
+            // padding-left:2rem;
+        }
     }
-  
    
+  
     figcaption{
         text-align: left;
         font-weight: 700;
@@ -60,6 +60,9 @@ figure{
         
         @include mq (768){
             color: $brand-color; 
+            inline-size: 100%;
+            padding:0;
+            text-align: center;
             }
     }
        
@@ -75,15 +78,21 @@ figure{
    
 }
 
-.machine-2{
+.machine.border-style{
     border-top: 1px solid rgba(32, 32, 32, 0.266);
+    @include mq(768){
+        border:none; 
+    }
 }
-.machine-3{
-    border-top: 1px solid rgba(32, 32, 32, 0.266) ;
-}
+   
 .machine-4{
     border-top: 1px solid rgba(32, 32, 32, 0.266) ;
     padding-bottom:4rem;
+    @include mq(768){
+        border:none;
+        padding-bottom: 0rem;
+ 
+    }
 }
 
 // .machine-wrapper{
