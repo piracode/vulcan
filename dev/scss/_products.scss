@@ -1,8 +1,9 @@
+@use "mixins" as *;
+@use "variables" as *;
 .machines{
-    background-image: url(../images/wave-blue-dark.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size:contain;
+    
+    
+    padding-bottom:4rem;
     h2{
         text-transform: uppercase;
     }
@@ -23,41 +24,80 @@ figure{
     margin:0.5rem;
     padding-top:1rem;
     padding-bottom:1rem;
+    @include mq (768){
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap:10px;
+
+        // padding-bottom:2rem;
+        
+    }
     img{
         width: 60%; 
         padding-left: 2rem; 
     } 
     a{
+        color:black;
         display:none;
-        @media (min-width: 30rem) {
-            display:contents;
+        @include mq(768){
+            display:block;
+            // padding-left:2rem;
         }
-    } 
+    }
+   
+  
     figcaption{
         text-align: left;
+        font-weight: 700;
+        text-transform: uppercase;
         // width: 50%;
         inline-size: 40%;
-        overflow-wrap: break-word;
+        // overflow-wrap: break-word;
         padding-left:1rem;
         padding-right:1rem;
         font-size: 22px;
+        
+        @include mq (768){
+            color: $brand-color; 
+            inline-size: 100%;
+            padding:0;
+            text-align: center;
+            }
     }
+       
 }
 
-.machine-2{
+@include mq(768){
+    .machine-wrapper{
+        display:grid;
+        grid-template-columns: (1fr 1fr 1fr 1fr);
+        grid-template-rows: (1fr);
+        padding-bottom:4rem;
+    }
+   
+}
+
+.machine.border-style{
     border-top: 1px solid rgba(32, 32, 32, 0.266);
+    @include mq(768){
+        border:none; 
+    }
 }
-.machine-3{
-    border-top: 1px solid rgba(32, 32, 32, 0.266) ;
-}
+   
 .machine-4{
     border-top: 1px solid rgba(32, 32, 32, 0.266) ;
     padding-bottom:4rem;
-}
-
-.machine-wrapper{
-    @media (min-width:62rem){
-    display:flex;
-    flex: 0 1 auto;
+    @include mq(768){
+        border:none;
+        padding-bottom: 0rem;
+ 
     }
 }
+
+// .machine-wrapper{
+//     @media (min-width:62rem){
+//     display:flex;
+//     flex: 0 1 auto;
+//     }
+// }
