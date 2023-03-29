@@ -21,7 +21,7 @@
   }
 
   &__links {
-    position: static; // this is needed to overwritte the styles
+    // position: static; // this is needed to overwritte the styles
     //appplued in navigation header, remove if fixed.
     display: flex;
     gap: 1rem;
