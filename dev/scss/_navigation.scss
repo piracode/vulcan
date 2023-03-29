@@ -1,50 +1,141 @@
-$nav-bg-color: rgba(128, 128, 128, 0.603);
-#main-nav-list {
-    display: none;
+@use "variables" as *;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#main-nav-list.toggled {
-    display: block;
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  background: $nav-color;
+  top: 0;
 }
 
-.m-button  {
-    display: block;
-    position:relative;
-    background-color: transparent;
-    border: 0;
-    fill: white;
-    z-index:8;
+
+nav ul {
+  --padding: 7px;
+  --font-size: 17px;
+
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size);
+  overflow-y: hidden;
+  transition: 1s cubic-bezier(.68,-0.55,.27,10.55);
 }
 
-.main-nav{
-    text-align: right; 
-    position: absolute;  
-    z-index:1; 
-    right: 2%;
-    top: 4%;
-      
-} 
-a:hover {
-    color: #ddd;
+nav ul li {
+padding: 0.5rem;
 }
 
-nav ul{
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 1.7px;
+  border-radius: 99px;
+  background: $nav-color;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+  left: 20%;
+  right: auto;
+  transform: translateX(-40%);
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav .menu {
+  width: 22px;
+  height: 16px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  margin: 20px;
+}
+
+nav .menu span {
+  width: 100%;
+  height: 2px;
+  border-radius: 99px;
+  background: #fff;
+  transition: 0.3s ease;
+  transform-origin: left;
+}
+
+nav .menu.active span {
+  background: $color-white;
+}
+
+nav .menu.active span:nth-child(1) {
+  transform: rotate(40deg);
+}
+
+nav .menu span:nth-child(3) {
+  transform-origin: left;
+}
+
+nav .menu.active span:nth-child(3) {
+  transform: rotate(-40deg);
+}
+
+nav .menu.active span:nth-child(2) {
+  transform: scale(0);
+}
+
+@media (max-width: 910px) {
+  nav .menu {
+    display: flex;
+  }
+
+  nav ul {
+    --height: 0px;
+
+    flex-direction: column;
+    background: $nav-color;
     position: absolute;
-    text-align: right;  
-    font-size: 1.0rem;
-    padding-right:5px;
-    z-index:2; 
-    right: 0;
+    width: 100%;
+    left: 0;
+    top: 56px;
+    height: var(--height);
+    transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+  }
+  nav ul.active {
+    --height: calc(
+      (((var(--padding) * 2) + (var(--font-size) * 1.5))) * var(--childenNumber)
+    
+    );
+    /*   (Block Level Padding + The Font Size) * The Number of Children   */
+    
+    
+    transition: 1s ease;
+   
+  }
 
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li a {
+    width: 100%;
+    text-transform: capitalize;
+  }
 }
-
-nav li,a{
-    text-decoration: none;
-    color:white;
-}
-
-nav li{
-    display: inline;
-    line-height: 1.5;
-    padding-top: 0;
-}   

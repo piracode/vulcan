@@ -1,3 +1,4 @@
+@use "variables" as *;
 * {box-sizing:border-box
 }
 .slideshow-container {
@@ -26,7 +27,7 @@
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: $nav-color;
 }
 
 .fade {

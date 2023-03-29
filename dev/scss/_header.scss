@@ -2,7 +2,12 @@
 //navigation//
 .white-wave img{
     transform: translateY(-30px);
-    z-index: 11;
+    z-index: 3;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: $color-white;
 }
 .buttons p {
 text-transform: uppercase;
