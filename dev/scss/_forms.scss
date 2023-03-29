@@ -30,12 +30,17 @@ fieldset{
     padding-right:0.25rem;
     border:none;
     border-top: 1px solid white;
+    @include mq(768){
+        display:flex;
+        flex-wrap:wrap;
+    }
 }
 label{
     display:block;
     width:100%;
-    @include mq (768){
-        width:50%;
+    @include mq(768){
+        display:inline;
+        
     }
 }
 #select-box{
@@ -49,10 +54,9 @@ label{
     &:focus{
         background-color: white;
     }
-    @include mq (768){
-        width:50%;
+    @include mq(768){
+        // width:50%;
     }
-   
 }
 
 .find-product{

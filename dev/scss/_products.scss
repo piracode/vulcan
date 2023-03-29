@@ -1,9 +1,7 @@
 @use "mixins" as *;
 @use "variables" as *;
 .machines{
-    
-    
-    padding-bottom:4rem;
+    padding-bottom:8rem;
     h2{
         text-transform: uppercase;
     }
@@ -68,15 +66,18 @@ figure{
        
 }
 
-@include mq(768){
-    .machine-wrapper{
+.machine-wrapper{
+    
+    @include mq(768){
         display:grid;
         grid-template-columns: (1fr 1fr 1fr 1fr);
         grid-template-rows: (1fr);
-        padding-bottom:4rem;
-    }
+        padding-bottom:5rem;
    
+    }
+    
 }
+
 
 .machine.border-style{
     border-top: 1px solid rgba(32, 32, 32, 0.266);
