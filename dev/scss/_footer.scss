@@ -1,22 +1,25 @@
 @use "variables" as *;
+@use "mixins" as *;
 
 .footer {
-  // color: $color-white;
+  color: $color-white;
+  background-color: $brand-color;
 
   text-transform: uppercase;
 
   &__logo .vulcan-logo {
     // width: 50%;
-    width: 8rem;
+    width: 7rem;
     margin: 0 auto;
     display: block;
-    padding: 1rem;
+    // padding: 1rem 1.5rem;
   }
   // background-position: right 20px top 0% / 30% auto;
 
   &__nav {
-    padding-bottom: 1rem;
+    padding: 2.5rem 1rem 1rem 1rem;
   }
+
   &__links {
     position: static; // this is needed to overwritte the styles
     //appplued in navigation header, remove if fixed.

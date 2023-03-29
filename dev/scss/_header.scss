@@ -1,22 +1,22 @@
 @use "variables" as *;
 //navigation//
-.white-wave img{
-    transform: translateY(-30px);
-    z-index: 11;
-}
-.buttons p {
-text-transform: uppercase;
-font-size: 0.5rem;
-font-weight: 700;
-border: 1px solid $color-white;
-width: fit-content;
-padding: 0.3rem;
-margin: 0 auto;
-transform: translateY(-250px);
-margin-top: 0.3rem;
-}
+.buttons a {
+  text-decoration: none;
+  color: $color-white;
+  .buttons p {
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    font-weight: 700;
+    border: 1px solid $color-white;
+    width: fit-content;
+    padding: 0.3rem;
+    margin: 0 auto;
+    transform: translateY(-250px);
+    margin-top: 0.3rem;
+  }
 
-.slideshow h1 {
+  .slideshow h1 {
     transform: translateY(-200px);
-    color:$color-white;
+    color: $color-white;
+  }
 }

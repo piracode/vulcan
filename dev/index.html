@@ -21,6 +21,7 @@
 
     <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
     <link rel="stylesheet" href="styles/styles.css?cachebuster=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
     <!-- Put your HTML code here... -->
@@ -47,21 +48,27 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
       </div>
-      <nav class="main-nav">
-        <!-- logo? -->
-        <button id="main-nav-button" class="m-button"aria-controls="header-menu" aria-expanded="false">
-        <svg aria-label="Menu Icon" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 29 20"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
-        </button>
-        <ul id="main-nav-list">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Parts</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Contact</a></li>
+
+      <nav class="header-nav">
+        <div>
+        <img class="logo" src="images/logo-white-vulcan.svg" width="100" alt="vulcan logo">
+        <ul id="nav">
+        <li class="menuItem"><a href="#">About</a></li>
+        <li class="menuItem"><a href="#">Products</a></li>
+        <li class="menuItem"><a href="#">Services</a></li>
+        <li class="menuItem"><a href="#">Parts</a></li>
+        <li class="menuItem"><a href="#">News</a></li>
+        <li class="menuItem"><a href="#">Contact</a></li>
       </ul>
-    </nav>
-    
+        </div>
+    <div class="menu" id="menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+<section class="slideshow">
       <section class="slideshow wave-section">
         <h1>
           We design and fabricate indestructible wasterwater screens. Enough
@@ -222,10 +229,13 @@
         <h3 class="find__heading">Installed in <span class="find__heading-city-near-you">a city near you</span></h3>
         <p class="find__button"><a class="find__button__anchor" href="#">Find a vulcan install</a></p>
       </article>
-      <article class="contact">
+      <article class="contact wave-section">
         <!-- h2 or h3 or h4? -->
         <h3 class="contact__heading">Ready to spec <span class="contact__heading-vulcan">vulcan</span> for your project?</h3>
         <p class="contact__button"><a href="#">Contact us</a></p>
+        <div class="wave light-blue-wave">
+          <div class="wave-img-light-blue"></div>
+        </div>
       </article>
     <!-- </section> -->
     <!-- <div class="wave light-blue-wave">
@@ -234,9 +244,6 @@
     </main>
 
     <footer class="footer">
-      <div class="wave light-blue-wave">
-        <div class="wave-img"></div>
-      </div>
       <div class="footer__logo">
         <img src="images/logo-white-vulcan.svg" alt="Vulcan logo" class="vulcan-logo">
       </div>

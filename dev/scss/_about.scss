@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "mixins" as *;
 
 //About us and contact button us could be a mixins. (font size 1.2 which is the same font size for the submit btton)
 //I wonder if Submit and find my products could be one too even if not the same look
@@ -58,16 +59,31 @@
   }
 }
 
-@media (min-width: 47.8em) {
-  .about {
-    &__subheading {
-      // padding: 2rem 8rem 4rem 6rem;
-      padding: 10rem;
-      color: red;
-    }
+// @media (min-width: 47.8em) {
+//   .about {
+//     &__subheading {
+//       padding: 2rem 8rem 4rem 6rem;
+//     }
 
+//     &__video {
+//     }
+//   }
+// }
+
+@include mq(444) {
+  .about {
     &__video {
+      width: 100%;
       background-color: red;
     }
   }
 }
+
+// @media (min-width: 27.75) {
+//   .about {
+//     &__video {
+//       width: 100%;
+//       background-color: red;
+//     }
+//   }
+// }
