@@ -1,32 +1,46 @@
 @use "variables" as *;
 @use "mixins" as *;
 
+// footer
 .footer {
   color: $color-white;
   background-color: $brand-color;
 
   text-transform: uppercase;
 
-  &__logo .vulcan-logo {
-    // width: 50%;
-    width: 7rem;
-    margin: 0 auto;
-    display: block;
-    // padding: 1rem 1.5rem;
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__vulcan-logo {
+      width: 25%;
+    }
   }
   // background-position: right 20px top 0% / 30% auto;
 
   &__nav {
     padding: 2.5rem 1rem 1rem 1rem;
+    // padding: 10rem;
   }
 
   &__links {
-    // position: static; // this is needed to overwritte the styles
-    //appplued in navigation header, remove if fixed.
     display: flex;
     gap: 1rem;
     align-items: center;
     justify-content: center;
+    list-style-type: none;
+  }
+
+  &__links a {
+    text-decoration: none;
+    // color: var($color-white);
+    color: white;
+  }
+
+  &__links i {
+    // color: var($color-white);
+    color: white;
   }
 
   &__copyright {
