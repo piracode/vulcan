@@ -3,7 +3,7 @@
 
 .form{
     background-color: $brand-color-dark;
-    padding-bottom:2rem;
+    padding-bottom:3rem;
 }
 
 .product-form{
@@ -21,22 +21,35 @@
         padding-bottom:1rem;
 
     }
+    p{
+        @include mq (768){
+            color: $brand-color;
+        }
+        @include mq (1440){
+            color: $brand-color;
+        }
+    }
 }
 
 fieldset{
     padding-top:1rem;
     border:none;
-    border-top: 1px solid white;
+    border-top: 2px solid white;
     @include mq (768){
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    @include mq (1440){
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 
 label{
     display:block;
     width:100%;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 #select-box{
     width: 100%;
@@ -46,6 +59,14 @@ label{
     border:none;
     margin-top:0.5rem;
     margin-bottom:0.5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../images/arrow-select.svg) ;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 5%;
+
     &:focus{
         background-color: white;
     }
@@ -60,5 +81,5 @@ label{
     text-transform: uppercase;
     color:white;
     padding:0.5rem;
-    margin-top:0.5rem;
+    margin-top:1rem;
 }
