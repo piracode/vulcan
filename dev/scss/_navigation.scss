@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "mixins" as *;
 
 *,
 *::after,
@@ -30,6 +31,13 @@
     position: relative;
     margin: 20px;
 
+    display: flex;
+    text-align: center;
+
+    @include mq (768){
+      display:none; 
+    }
+
     span{
       width: 100%;
       height: 2px;
@@ -58,19 +66,47 @@
       }
     }
   }
+    ul.active{
+      display:block; 
+      
+        --height: calc(
+        (((var(--padding) * 2) + (var(--font-size) * 1.5))) * var(--childenNumber)
+      
+      );
+      /*   (Block Level Padding + The Font Size) * The Number of Children   */
+      transition: 1s ease;
+      
+     
+    }
     ul {
-    --padding: 7px;
-    --font-size: 17px;
+      --height: 0px;
 
-    list-style: none;
-    display: flex;
-    align-items: center;
-    font-size: var(--font-size);
-    overflow-y: hidden;
-    transition: 1s cubic-bezier(.68,-0.55,.27,10.55);
+      flex-direction: column;
+      background: $nav-color;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 56px;
+      height: var(--height);
+      transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+      display:none;
+    
+
+    @include mq(768){
+      all:initial;
+      display:flex;
+      justify-content: space-between;
+      font-family: $body-font ;
+
+    }
 
     li{
       padding: 0.5rem;
+      width: 100%;
+
+      @include mq(768){
+        // width: 100%;
+      }
 
       a{
         color: #fff;
@@ -94,6 +130,10 @@
         &:hover{
           width: 100%;
         }
+        @include mq(768){
+          width: 100%;
+          text-transform: uppercase;
+        }
       }
     }
   }
@@ -101,42 +141,3 @@
 
 
 
-@media (max-width: 910px) {
-  nav .menu {
-    display: flex;
-    text-align: center;
-  }
-
-  nav ul {
-    --height: 0px;
-
-    flex-direction: column;
-    background: $nav-color;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 56px;
-    height: var(--height);
-    transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
-    
-  }
-  nav ul.active {
-    --height: calc(
-      (((var(--padding) * 2) + (var(--font-size) * 1.5))) * var(--childenNumber)
-    
-    );
-    /*   (Block Level Padding + The Font Size) * The Number of Children   */
-    
-    
-    transition: 1s ease;
-   
-  }
-
-  nav ul li {
-    width: 100%;
-  }
-  nav ul li a {
-    width: 100%;
-    text-transform: uppercase;
-  }
-}
