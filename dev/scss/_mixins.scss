@@ -1,21 +1,26 @@
 //Mixin
 @use "sass:math";
 
-//USE FOR WAVES 
-@function em($px ,$bc: 16){
-    @return #{math.div($px, $bc)}em;
+//USE FOR WAVES
+@function em($px, $bc: 16) {
+  @return #{math.div($px, $bc)}em;
 }
 
-@function rem($px){
-    @return #{math.div($px, 16)}rem;
+@function rem($px) {
+  @return #{math.div($px, 16)}rem;
 }
 
 // Media Query Mixin
-@mixin mq($w){
+@mixin mq($w) {
+  $w: em($w);
 
-    $w: em($w);
-
-    @media (min-width: $w){
-        @content;
-    }
+  @media (min-width: $w) {
+    @content;
+  }
 }
+
+//btn transparent mixin
+
+//btn blue mixin
+
+//logo mixin when centered?
