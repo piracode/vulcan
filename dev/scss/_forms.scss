@@ -12,6 +12,7 @@
     color:white;
     h2{
         text-transform: uppercase;
+        font-size: 30px;
     }
     h2, p{
         color:white;
@@ -24,10 +25,10 @@
     p{
         @include mq (768){
             color: $brand-color;
+            font-size:22px;
         }
-        @include mq (1440){
-            color: $brand-color;
-        }
+
+    
     }
 }
 
