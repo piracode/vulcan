@@ -4,6 +4,10 @@
     padding-bottom:8rem;
     h2{
         text-transform: uppercase;
+        display:block;
+        padding-bottom:2rem;
+        font-size: 30px;
+        color: $brand-color-dark; 
     }
    
     h2, p{
@@ -11,6 +15,16 @@
         margin-left:3rem;
         margin-right: 3rem;
     }
+    p{
+        @include mq (768){
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            max-width: 42rem;
+        }
+    
+    }
+    
 }
 
 
@@ -20,17 +34,16 @@ figure{
     justify-content: space-between;
     align-items: center;
     margin:0.5rem;
-    padding-top:1rem;
-    padding-bottom:1rem;
     z-index:-1;
+    padding-top: 1rem;
+    padding-bottom:1rem;
     @include mq (768){
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
         gap:10px;
-
-        // padding-bottom:2rem;
-        
+        padding-top: 0rem;
+        padding-bottom:0rem;
     }
     img{
         width: 60%; 
@@ -44,7 +57,6 @@ figure{
         display:none;
         @include mq(768){
             display:block;
-            // padding-left:2rem;
         }
     }
    
@@ -53,9 +65,7 @@ figure{
         text-align: left;
         font-weight: 700;
         text-transform: uppercase;
-        // width: 50%;
         inline-size: 40%;
-        // overflow-wrap: break-word;
         padding-left:1rem;
         padding-right:1rem;
         font-size: 22px;
@@ -65,18 +75,22 @@ figure{
             inline-size: 100%;
             padding:0;
             text-align: center;
+            font-size: 25px;
             }
     }
        
 }
 
 .machine-wrapper{
+    padding-top:2rem;
+    padding-bottom:2rem;
     
     @include mq(768){
         display:grid;
         grid-template-columns: (1fr 1fr 1fr 1fr);
         grid-template-rows: (1fr);
         padding-bottom:5rem;
+        padding-top:3rem;
    
     }
     
@@ -92,18 +106,10 @@ figure{
    
 .machine-4{
     border-top: 1px solid rgba(32, 32, 32, 0.266) ;
-    padding-bottom:4rem;
     @include mq(768){
         border: none;
-        padding-bottom: 1rem;
         padding-top: 0rem;
  
     }
 }
 
-// .machine-wrapper{
-//     @media (min-width:62rem){
-//     display:flex;
-//     flex: 0 1 auto;
-//     }
-// }
