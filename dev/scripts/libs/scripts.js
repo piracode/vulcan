@@ -1,39 +1,22 @@
-// Write your JavaScript here...
-let slideIndex = 1;
-showSlides(slideIndex);
+$(document).ready(function () {
+  $(".slider-wrapper").slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    SlidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  });
+});
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
-//navigation 
-const navigation = document.getElementById("nav");
+// navigation
+const navigation = document.getElementById("header-nav");
 const menu = document.getElementById("menu");
+const menuUl = document.querySelector(".header__links");
 menu.addEventListener("click", () => {
   navigation.style.setProperty("--childenNumber", navigation.children.length);
   navigation.classList.toggle("active");
   menu.classList.toggle("active");
+  menuUl.classList.toggle("active");
 });
-

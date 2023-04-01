@@ -25,7 +25,7 @@
   &__subheading {
     font-weight: 400;
     font-size: 1.2rem;
-    padding: 2rem 4rem 4rem;
+    padding: 2rem 4rem;
   }
 
   &__button {
@@ -44,7 +44,6 @@
   }
 
   &__video {
-    // How to add more padding around the video? and still ahve the green part on phone?
     background-color: $brand-color;
     padding: 4rem 1.4rem;
     &__container {
@@ -65,17 +64,6 @@
   }
 }
 
-// @media (min-width: 47.8em) {
-//   .about {
-//     &__subheading {
-//       padding: 2rem 8rem 4rem 6rem;
-//     }
-
-//     &__video {
-//     }
-//   }
-// }
-
 @include mq(444) {
   .about {
     &__video {
@@ -84,6 +72,7 @@
       }
       iframe {
         border: 1rem solid $brand-color-dark;
+        // width: 91%;
         width: 100%;
         height: 100%;
       }
@@ -91,11 +80,63 @@
   }
 }
 
-// @media (min-width: 27.75) {
-//   .about {
-//     &__video {
-//       width: 100%;
-//       background-color: red;
-//     }
-//   }
-// }
+@include mq(477) {
+  .about {
+    &__heading {
+      padding: 8rem 3rem 0 3rem;
+    }
+  }
+}
+
+@include mq(622) {
+  .about {
+    &__subheading {
+      padding: 2rem 8rem;
+    }
+    &__video {
+      iframe {
+        width: 91%;
+      }
+    }
+  }
+}
+
+@include mq(945) {
+  .about {
+    &__heading {
+      padding: 8rem 12rem 0 12rem;
+    }
+    &__subheading {
+      // padding-bottom: 4rem;
+      padding: 2rem 14rem 4rem 14rem;
+    }
+    &__heading {
+      span {
+        display: block;
+      }
+    }
+    &__video {
+      iframe {
+        width: 94%;
+      }
+    }
+  }
+}
+
+@include mq(1235) {
+  .about {
+    &__heading {
+      font-size: 3.5rem;
+    }
+    &__subheading {
+      font-size: 1rem;
+      span {
+        display: block;
+      }
+    }
+
+    &__button {
+      padding: 0.75rem 4rem;
+    }
+  }
+}

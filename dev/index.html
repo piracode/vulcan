@@ -9,7 +9,10 @@
     <!-- Put Google Fonts Here -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome Icons -->
     <script
@@ -21,80 +24,124 @@
 
     <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
     <link rel="stylesheet" href="styles/styles.css?cachebuster=1" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/slick.css" />
+    <link rel="stylesheet" href="styles/slick-theme.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Put your HTML code here... -->
+    <!-- <section class="hero"> -->
+    <header class="header">
+      <div class="header__mobile">
+        <div class="header__link-top-links">
+          <div class="header__link header__link-grouped-links-1-desktop">
+            <li class="header__link header__link-installMap">
+              <a href="#">Install Map</a>
+            </li>
+            <li class="header__link header__link-productLitterature">
+              <a href="#">Product Litterature</a>
+            </li>
+          </div>
+          <div class="header__link header__link-grouped-links-2">
+            <li class="header__link header__link-number">
+              <i class="fa-sharp fa-solid fa-phone"></i>
+              <a href="tel:712-642-2755">+1 712-642-2755</a>
+            </li>
+            <li class="header__link header__link-mail">
+              <i class="fa-sharp fa-solid fa-envelope"></i>
+              <a
+                href="mailto:mvillamartin@my.bcit.ca"
+                target="_blank"
+                rel="noopener"
+              >
+                Contact Us
+              </a>
+            </li>
+          </div>
+        </div>
+        <div class="header__logo">
+          <img
+            src="images/logo-white-vulcan.svg"
+            alt="Vulcan logo"
+            class="header__logo__vulcan-logo"
+          />
+        </div>
 
-    <header>
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <img src="images/header-slider-img-01.jpg" alt="contruction building">
-        </div>
-      
-        <div class="mySlides fade">
-          <img src="images/header-slider-img-02.jpg" alt="a man welding">
-        </div>
-      
-        <div class="mySlides fade">
-          <img src="images/header-slider-img-03.jpg" alt="men on a production line">
-        </div>
-        <!-- <div class="white-wave">
-          <img src="images/wave-white.png" alt="white wave">
-        </div> -->
-        
-      <div class="slide-dots">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+        <nav class="header__nav" id="header-nav">
+          <ul class="header__links">
+            <li class="header__link header__link-about">
+              <a href="#">About</a>
+            </li>
+            <li class="header__link header__link-products">
+              <a href="#">Products</a>
+            </li>
+            <li class="header__link header__link-services">
+              <a href="#">Services</a>
+            </li>
+            <li class="header__link header__link-parts">
+              <a href="#">Parts</a>
+            </li>
+            <li class="header__link header__link-news">
+              <a href="#">News</a>
+            </li>
+            <li class="header__link header__link-contact">
+              <a href="#">Contact</a>
+            </li>
+            <div class="header__link header__link-grouped-links-1-mobile">
+              <li class="header__link header__link-installMap">
+                <a href="#">Install Map</a>
+              </li>
+              <li class="header__link header__link-productLitterature">
+                <a href="#">Product Litterature</a>
+              </li>
+            </div>
+          </ul>
+          <div class="menu" id="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
       </div>
-      
-      <nav class="header-nav">
-        <div class="logo">
-        <img  src="images/logo-white-vulcan.svg" width="100" alt="vulcan logo">
-      </div>
-        <div class="middle-nav">
-        <ul id="nav">
-        <li class="menuItem"><a href="#">About</a></li>
-        <li class="menuItem"><a href="#">Products</a></li>
-        <li class="menuItem"><a href="#">Services</a></li>
-        <li class="menuItem"><a href="#">Parts</a></li>
-        <li class="menuItem"><a href="#">News</a></li>
-        <li class="menuItem"><a href="#">Contact</a></li>
-      </ul>
-        </div>
-    <div class="menu" id="menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </nav>
 
-<section class="slideshow">
-      <section class="slideshow wave-section">
-        <h1>
-          We design and fabricate indestructible wasterwater screens. Enough
-          Said.
-        </h1>
-        <div class="buttons">
-        <p class="view-products"><a href="#">Veiw Products</a></p>
-        <p class="view-services"><a href="#">Veiw Services</a></p>
-      </div>
-        
+      <section class="hero">
+        <div class="slider-wrapper">
+          <img src="images/header-slider-img-01.jpg" alt="Machines at Vulcan" />
+          <img src="images/header-slider-img-02.jpg" alt="Machines at Vulcan" />
+          <img src="images/header-slider-img-03.jpg" alt="Machines at Vulcan" />
+        </div>
+        <div class="hero__text-content">
+          <h1 class="hero__heading">
+            We design and fabricate
+            <span>indestructible wastewater screens. </span>Enough said.
+          </h1>
+          <div class="hero__button-box">
+            <p class="hero__button hero__button__view-products btn-transparent">
+              <a href="#">View Products</a>
+            </p>
+            <p class="hero__button hero__button__view-services btn-transparent">
+              <a href="#">View Services</a>
+            </p>
+          </div>
+        </div>
       </section>
       <div class="wave white-wave">
         <div class="wave-img-white"></div>
       </div>
     </header>
 
+    <!-- </header> -->
     <main>
       <section class="machines wave-section">
         <h2>Customized Per Order</h2>
-          <p>
+        <p>
           Just as no two treatment plants are the same, no two of our screening,
           grit handling or sludge thickening products are either. We'll help
           determine exactly what you need.
-          </p>
+        </p>
         <div class="machine-wrapper">
           <figure class="machine-1">
             <img
@@ -104,15 +151,15 @@
                 /images/machine-01-912x834.png 912w
               "
               size="(max-width:768px) calc(60vw - 1rem), 
-              calc(25vw - 1rem)" 
-
+              calc(25vw - 1rem)"
               alt="Screening machinery"
             />
             <figcaption>Screening</figcaption>
-            <a href="#">View Selection</a>   <!--figure a not displayed when min width is less than-->
+            <a href="#">View Selection</a>
+            <!--figure a not displayed when min width is less than-->
           </figure>
 
-          <figure class= "machine border-style">
+          <figure class="machine border-style">
             <img
               srcset="
                 /images/machine-02-300x274.png 300w,
@@ -120,8 +167,7 @@
                 /images/machine-02-912x834.png 912w
               "
               size="(max-width:768px) calc(60vw - 1rem), 
-              calc(25vw - 1rem)" 
-
+              calc(25vw - 1rem)"
               src="/images/machine-02-912x834.png"
               alt="Screening and handling machinery"
             />
@@ -137,173 +183,227 @@
                 /images/machine-03-912x834.png 912w
               "
               size="(max-width:768px) calc(60vw - 1rem), 
-              calc(25vw - 1rem)" 
-
+              calc(25vw - 1rem)"
               alt="Grit handling machinery"
             />
-          <figcaption>Grit Handling</figcaption>
-          <a href="#">View Selection</a>
-            </figure>
+            <figcaption>Grit Handling</figcaption>
+            <a href="#">View Selection</a>
+          </figure>
 
-        <figure class="machine-4">
-          <img
-          srcset="
-            /images/machine-04-300x274.png 300w,
-            /images/machine-04-768x702.png 768w,
-            /images/machine-04-912x834.png 912w
-          "
-          size="(max-width:768px) calc(60vw - 1rem), 
-              calc(25vw - 1rem)" 
-
-          alt="Sludge thickening machinery"
-          />
-          <figcaption>Sludge Thickening</figcaption>
-          <a href="#">View Selection</a>
-        </figure>
-    </div>
-      <div class="wave dark-blue-wave">
-        <div class="wave-img"></div>
-      </div>
-    </section>
-
-    <section class="form">
-      <form class="product-form">
-        <h2>Product Advisor</h2>
-          <p>Find your project's perfect fit.</p>
-        <fieldset class="dropdown-inputs">
-        <!-- <legend>Find your project's perfect fit.</legend> -->
-        <div>
-          <label for="select-box">Product Type</label>
-          <select id="select-box" name="products">
-            <option value="placeholder" disabled selected hidden>Select</option>
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-          </select>
+          <figure class="machine-4">
+            <img
+              srcset="
+                /images/machine-04-300x274.png 300w,
+                /images/machine-04-768x702.png 768w,
+                /images/machine-04-912x834.png 912w
+              "
+              size="(max-width:768px) calc(60vw - 1rem), 
+              calc(25vw - 1rem)"
+              alt="Sludge thickening machinery"
+            />
+            <figcaption>Sludge Thickening</figcaption>
+            <a href="#">View Selection</a>
+          </figure>
         </div>
-
-        <div>
-          <label for="select-box">Screen Location</label>
-          <select id="select-box" name="products">
-            <option value="placeholder" disabled selected hidden>Select</option>
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-          </select>
+        <div class="wave dark-blue-wave">
+          <div class="wave-img"></div>
         </div>
-
-        <div>
-          <label for="select-box">Flow Type</label>
-          <select id="select-box" name="products">
-            <option value="placeholder" disabled selected hidden>Select</option>
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-          </select>
-        </div>
-        
-        <div>
-          <label for="select-box">Channel Depth</label>
-          <select id="select-box" name="products">
-            <option value="placeholder" disabled selected hidden>Select</option>
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="select-box">Channel Width</label>
-          <select id="select-box" name="products">
-            <option value="placeholder" disabled selected hidden>Select</option>
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-          </select>
-        </div>
-        </fieldset>
-
-        <button class="find-product" id="find-product">Find my product</button>
-      </form>
-    </section>
-
-	  <section class="about">
-      <h2 class="about__heading">Delivering clean, safe water since 1975. Refreshing indeed.</h2>
-      <h3 class="about__subheading">Vulcan wastewater screening equipment has played a vital role in protecting the water supply of more than 900 cities and communities throughout the world. </h3>
-      <p class="about__button"><a href="#">About us</a></p>
       </section>
-	  
+
+      <section class="form">
+        <form class="product-form">
+          <h2>Product Advisor</h2>
+          <p>Find your project's perfect fit.</p>
+          <fieldset class="dropdown-inputs">
+            <!-- <legend>Find your project's perfect fit.</legend> -->
+            <div>
+              <label for="select-box">Product Type</label>
+              <select id="select-box" name="products">
+                <option value="placeholder" disabled selected hidden>
+                  Select
+                </option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="select-box">Screen Location</label>
+              <select id="select-box" name="products">
+                <option value="placeholder" disabled selected hidden>
+                  Select
+                </option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="select-box">Flow Type</label>
+              <select id="select-box" name="products">
+                <option value="placeholder" disabled selected hidden>
+                  Select
+                </option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="select-box">Channel Depth</label>
+              <select id="select-box" name="products">
+                <option value="placeholder" disabled selected hidden>
+                  Select
+                </option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="select-box">Channel Width</label>
+              <select id="select-box" name="products">
+                <option value="placeholder" disabled selected hidden>
+                  Select
+                </option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <button class="find-product" id="find-product">
+            Find my product
+          </button>
+        </form>
+      </section>
+
+      <section class="about">
+        <h2 class="about__heading">
+          Delivering clean, safe water
+          <span>since 1975. Refreshing indeed.</span>
+        </h2>
+        <h3 class="about__subheading">
+          Vulcan wastewater screening equipment has played a vital role in
+          protecting the water supply of more than 900<span>
+            cities and communities throughout the world.</span
+          >
+        </h3>
+        <p class="about__button btn-transparent"><a href="#">About us</a></p>
+      </section>
+
       <!-- Not sure if to put a section here or if to have articles. what's semantically correct. Will ahve to check the entire HTML to make sure we are right -->
-    <section class="about__video">
-      <div class="about__video__container">
-      <iframe src="https://player.vimeo.com/video/183929811" frameborder="1" allowfullscreen></iframe>
-    </div>
-    </section>
-    <!-- <section class="contact"> -->
+      <section class="about__video">
+        <div class="about__video__container">
+          <iframe
+            src="https://player.vimeo.com/video/183929811"
+            frameborder="1"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- <section class="contact"> -->
       <article class="newsletter">
-        <p class="newsletter__heading">Stay in the know. Sign up for our newsletter.</p>
+        <p class="newsletter__heading">
+          Stay in the know. Sign up for our newsletter.
+        </p>
         <form class="newsletter-form" action="submit.php" method="POST">
           <label for="email"></label>
-          <input type="email" id="email" name="email" placeholder="Enter your email">
-          <button type="submit">Submit</button>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+          <button type="submit" class="btn-blue">Submit</button>
         </form>
       </article>
-      <article class="find">
-        <!-- <img src="images/map.jpg" alt="USA map" class="find__img"> -->
-        <!-- h2 or h3 or h4? -->
-        <h3 class="find__heading">Installed in <span class="find__heading-city-near-you">a city near you</span></h3>
-        <p class="find__button"><a class="find__button__anchor" href="#">Find a vulcan install</a></p>
-      </article>
-      <article class="contact wave-section">
-        <!-- h2 or h3 or h4? -->
-        <h3 class="contact__heading">Ready to spec <span class="contact__heading-vulcan">vulcan</span> for your project?</h3>
-        <p class="contact__button"><a href="#">Contact us</a></p>
+      <div class="findandcontact-container wave-section">
+        <article class="find">
+          <!-- h2 or h3 or h4? -->
+          <div class="find-text-container">
+            <h3 class="find__heading">
+              Installed in
+              <span class="find__heading-city-near-you">a city near you</span>
+            </h3>
+            <p class="find__button">
+              <a class="find__button__anchor btn-blue" href="#"
+                >Find a vulcan install</a
+              >
+            </p>
+          </div>
+        </article>
+
+        <article class="contact">
+          <!-- h2 or h3 or h4? -->
+          <div class="contact-text-container">
+            <h3 class="contact__heading">
+              Ready to spec
+              <span class="contact__heading-vulcan">vulcan</span> for your
+              project?
+            </h3>
+            <p class="contact__button btn-blue"><a href="#">Contact us</a></p>
+          </div>
+        </article>
         <div class="wave light-blue-wave">
           <div class="wave-img-light-blue"></div>
         </div>
-      </article>
-    <!-- </section> -->
-    <!-- <div class="wave light-blue-wave">
-      <div class="wave-img"></div>
-    </div> -->
+      </div>
     </main>
 
+    <!-- <footer class="footer wave-section"> -->
     <footer class="footer">
+      <!-- <div class="wave light-blue-wave">
+        <div class="wave-img-light-blue"></div>
+      </div> -->
+      <!-- <div class="footer-container1"> -->
       <div class="footer__logo">
-        <img src="images/logo-white-vulcan.svg" alt="Vulcan logo" class="footer__logo__vulcan-logo">
+        <img
+          src="images/logo-white-vulcan.svg"
+          alt="Vulcan logo"
+          class="footer__logo__vulcan-logo"
+        />
       </div>
-      <nav class="footer__nav">
-        <ul class="footer__links">
-          <li class="footer__link footer__link-facebook">
-            <a href="https://www.facebook.com">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-          </li>
-          <li class="footer__link footer__link-linkedin">
-            <a href="https://www.linkedin.com">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="footer__link footer__link-number">
-            <i class="fa-sharp fa-solid fa-phone"></i>
-            <a href="tel:712-642-2755">+1 712-642-2755</a>
-           </li>
-           <li class="footer__link footer__link-mail">
-            <i class="fa-sharp fa-solid fa-envelope"></i>
-            <a
-            href="mailto:mvillamartin@my.bcit.ca"
-            target="_blank"
-            rel="noopener"
-          >
-            Contact Us
-          </a>
-        </li>
-        </ul>
-      </nav>
-      <p class="footer__copyright">Copyright 2017. All Right Reserved</p>
+      <!-- </div> -->
+      <div class="footer-container2">
+        <nav class="footer__nav">
+          <ul class="footer__links">
+            <li class="footer__link footer__link-facebook">
+              <a href="https://www.facebook.com">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li class="footer__link footer__link-linkedin">
+              <a href="https://www.linkedin.com">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="footer__link footer__link-number">
+              <i class="fa-sharp fa-solid fa-phone"></i>
+              <a href="tel:712-642-2755">+1 712-642-2755</a>
+            </li>
+            <li class="footer__link footer__link-mail">
+              <i class="fa-sharp fa-solid fa-envelope"></i>
+              <a
+                href="mailto:mvillamartin@my.bcit.ca"
+                target="_blank"
+                rel="noopener"
+              >
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <p class="footer__copyright">Copyright 2017. All Right Reserved</p>
+      </div>
     </footer>
-
-
+    <!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
+    <script src="scripts/libs/jquery/jquery-3.6.0.min.js"></script>
     <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
     <script src="scripts/script.min.js?cachebuster=1"></script>
     <!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->
