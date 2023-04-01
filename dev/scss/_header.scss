@@ -1,11 +1,2 @@
 @use "variables" as *;
-
-.header {
-  margin-bottom: 10rem;
-  height: 624px;
-  position: relative;
-  // height: 100%;
-  &__logo {
-    // position: absolute;
-  }
-}
+@use "mixins" as *;

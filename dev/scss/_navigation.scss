@@ -2,23 +2,27 @@
 @use "mixins" as *;
 
 .header {
-  // position: relative;
-  &__logo {
-    // display: flex;
-    // align-items: center;
-    // justify-content: left;
-    // position: relative;
-    z-index: 1;
+  margin-bottom: 10rem;
+  height: 624px;
+  position: relative;
+}
 
+// @include mq(768) {
+
+// }
+
+.header {
+  &__logo {
     &__vulcan-logo {
-      width: 25%;
+      width: 7rem;
+      padding: 0.5rem;
     }
   }
   &__mobile {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    position: absolute;
     width: 100%;
     background: $nav-color;
     top: 0;
@@ -27,7 +31,7 @@
 
   &__link {
     text-transform: uppercase;
-    &-grouped-links-2 {
+    &-top-links {
       display: none;
     }
   }
@@ -84,7 +88,6 @@
     --height: calc(
       (((var(--padding) * 2) + (var(--font-size) * 1.5))) * var(--childenNumber)
     );
-    /*   (Block Level Padding + The Font Size) * The Number of Children   */
     transition: 1s ease;
   }
   ul {
@@ -111,9 +114,9 @@
     li {
       padding: 0.5rem;
       width: 100%;
+      text-align: center;
 
       @include mq(768) {
-        // width: 100%;
       }
 
       a {
@@ -148,13 +151,73 @@
 
 @include mq(768) {
   .header {
+    position: relative;
+
+    // &__links {
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+
+    //   a {
+    //     align-self: center;
+    //   }
+    // }
+
+    &__logo {
+      display: flex;
+      justify-content: center;
+      &__vulcan-logo {
+        width: 10rem;
+      }
+    }
+
+    &__nav {
+      margin: 1rem;
+    }
+
     &__mobile {
       display: block;
       background-color: transparent;
+      list-style-type: none;
     }
 
     &__nav {
       background-color: $nav-color;
+    }
+
+    &__link {
+      &-top-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+      }
+      &-top-links a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      &-grouped-links-1-mobile {
+        display: none;
+      }
+
+      &-grouped-links-1-desktop,
+      &-grouped-links-2 {
+        display: flex;
+        gap: 1rem;
+      }
+
+      i {
+        color: $color-white;
+      }
+    }
+  }
+}
+
+@include mq(900) {
+  .header {
+    &__nav {
+      margin: 1rem 9rem;
     }
   }
 }

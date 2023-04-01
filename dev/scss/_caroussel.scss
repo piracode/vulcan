@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "mixins" as *;
 
 .hero {
   height: 100%;
@@ -58,10 +59,7 @@
 }
 
 .slider-wrapper {
-  // height: 624px;
   height: 100%;
-  // border: 5px dotted pink;
-  // .hero__slide {
   img {
     height: 100%;
     width: 100%;
@@ -77,6 +75,30 @@
     // border: 5px dashed orange;
     div {
       height: 100%;
+    }
+  }
+}
+
+@include mq(530) {
+  .hero {
+    &__heading {
+      span {
+        display: block;
+      }
+    }
+  }
+}
+
+@include mq(768) {
+  .hero {
+    &__button {
+      margin: initial;
+      &-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+      }
     }
   }
 }

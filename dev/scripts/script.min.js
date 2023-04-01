@@ -5,22 +5,10 @@ $(document).ready(function () {
     speed: 500,
     slidesToShow: 1,
     SlidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
   });
 });
-
-// $(document).ready(function () {
-//   $(".your-class").slick({
-//     dots: true,
-//     infinite: true,
-//     speed: 500,
-//     slidesToShow: 1,
-//     SlidesToScroll: 3,
-//   });
-// });
-
-// const headerNav = document.getElementById("header-nav");
-
-// headerNav.style.display = "none";
 
 // navigation
 const navigation = document.getElementById("header-nav");

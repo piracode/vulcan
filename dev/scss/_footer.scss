@@ -5,6 +5,8 @@
 .footer {
   color: $color-white;
   background-color: $brand-color;
+  // background-color: red;
+  z-index: -1;
 
   text-transform: uppercase;
 
@@ -14,7 +16,8 @@
     justify-content: center;
 
     &__vulcan-logo {
-      width: 25%;
+      // width: 25%;
+      width: 7rem;
     }
   }
   // background-position: right 20px top 0% / 30% auto;
@@ -48,5 +51,34 @@
     text-align: center;
     font-weight: 500;
     padding-bottom: 3rem;
+  }
+}
+
+@include mq(768) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    &__logo {
+      width: 7rem;
+      justify-self: start;
+      // align-self: start;
+      margin-left: 3rem;
+    }
+  }
+}
+
+@include mq(1235) {
+  .footer {
+    // display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    &__logo {
+      grid-column: 1;
+    }
+    &-container2 {
+      display: flex;
+      grid-column: 2;
+    }
   }
 }

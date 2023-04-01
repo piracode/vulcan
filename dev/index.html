@@ -20,17 +20,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script> -->
-
     <!-- end Google Fonts -->
 
     <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
@@ -47,6 +36,32 @@
     <!-- <section class="hero"> -->
     <header class="header">
       <div class="header__mobile">
+        <div class="header__link-top-links">
+          <div class="header__link header__link-grouped-links-1-desktop">
+            <li class="header__link header__link-installMap">
+              <a href="#">Install Map</a>
+            </li>
+            <li class="header__link header__link-productLitterature">
+              <a href="#">Product Litterature</a>
+            </li>
+          </div>
+          <div class="header__link header__link-grouped-links-2">
+            <li class="header__link header__link-number">
+              <i class="fa-sharp fa-solid fa-phone"></i>
+              <a href="tel:712-642-2755">+1 712-642-2755</a>
+            </li>
+            <li class="header__link header__link-mail">
+              <i class="fa-sharp fa-solid fa-envelope"></i>
+              <a
+                href="mailto:mvillamartin@my.bcit.ca"
+                target="_blank"
+                rel="noopener"
+              >
+                Contact Us
+              </a>
+            </li>
+          </div>
+        </div>
         <div class="header__logo">
           <img
             src="images/logo-white-vulcan.svg"
@@ -54,6 +69,7 @@
             class="header__logo__vulcan-logo"
           />
         </div>
+
         <nav class="header__nav" id="header-nav">
           <ul class="header__links">
             <li class="header__link header__link-about">
@@ -74,28 +90,12 @@
             <li class="header__link header__link-contact">
               <a href="#">Contact</a>
             </li>
-            <div class="header__link .header__link-grouped-links-1">
+            <div class="header__link header__link-grouped-links-1-mobile">
               <li class="header__link header__link-installMap">
                 <a href="#">Install Map</a>
               </li>
               <li class="header__link header__link-productLitterature">
                 <a href="#">Product Litterature</a>
-              </li>
-            </div>
-            <div class="header__link header__link-grouped-links-2">
-              <li class="header__link header__link-number">
-                <i class="fa-sharp fa-solid fa-phone"></i>
-                <a href="tel:712-642-2755">+1 712-642-2755</a>
-              </li>
-              <li class="header__link header__link-mail">
-                <i class="fa-sharp fa-solid fa-envelope"></i>
-                <a
-                  href="mailto:mvillamartin@my.bcit.ca"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Contact Us
-                </a>
               </li>
             </div>
           </ul>
@@ -108,29 +108,25 @@
       </div>
 
       <section class="hero">
-        <article class="slider-wrapper">
-          <!-- <div class="hero__slide"> -->
-          <img src="images/header-slider-img-01.jpg" alt="machines at Vulcan" />
-          <!-- </div> -->
-          <!-- <div class="hero__slide"> -->
-          <img src="images/header-slider-img-02.jpg" alt="machines at Vulcan" />
-          <!-- </div> -->
-          <!-- <div class="hero__slide"> -->
-          <img src="images/header-slider-img-03.jpg" alt="machines at Vulcan" />
-          <!-- </div> -->
-        </article>
-        <article class="hero__text-content">
+        <div class="slider-wrapper">
+          <img src="images/header-slider-img-01.jpg" alt="Machines at Vulcan" />
+          <img src="images/header-slider-img-02.jpg" alt="Machines at Vulcan" />
+          <img src="images/header-slider-img-03.jpg" alt="Machines at Vulcan" />
+        </div>
+        <div class="hero__text-content">
           <h1 class="hero__heading">
-            We design and fabricate indestructible wastewater screens. Enough
-            said.
+            We design and fabricate
+            <span>indestructible wastewater screens. </span>Enough said.
           </h1>
-          <p class="hero__button hero__button__view-products btn-transparent">
-            <a href="#">View Products</a>
-          </p>
-          <p class="hero__button hero__button__view-services btn-transparent">
-            <a href="#">View Services</a>
-          </p>
-        </article>
+          <div class="hero__button-box">
+            <p class="hero__button hero__button__view-products btn-transparent">
+              <a href="#">View Products</a>
+            </p>
+            <p class="hero__button hero__button__view-services btn-transparent">
+              <a href="#">View Services</a>
+            </p>
+          </div>
+        </div>
       </section>
       <div class="wave white-wave">
         <div class="wave-img-white"></div>
@@ -281,12 +277,14 @@
 
       <section class="about">
         <h2 class="about__heading">
-          Delivering clean, safe water since 1975. Refreshing indeed.
+          Delivering clean, safe water
+          <span>since 1975. Refreshing indeed.</span>
         </h2>
         <h3 class="about__subheading">
           Vulcan wastewater screening equipment has played a vital role in
-          protecting the water supply of more than 900 cities and communities
-          throughout the world.
+          protecting the water supply of more than 900<span>
+            cities and communities throughout the world.</span
+          >
         </h3>
         <p class="about__button btn-transparent"><a href="#">About us</a></p>
       </section>
@@ -317,37 +315,45 @@
           <button type="submit" class="btn-blue">Submit</button>
         </form>
       </article>
-      <article class="find">
-        <!-- <img src="images/map.jpg" alt="USA map" class="find__img"> -->
-        <!-- h2 or h3 or h4? -->
-        <h3 class="find__heading">
-          Installed in
-          <span class="find__heading-city-near-you">a city near you</span>
-        </h3>
-        <p class="find__button">
-          <a class="find__button__anchor btn-blue" href="#"
-            >Find a vulcan install</a
-          >
-        </p>
-      </article>
-      <article class="contact wave-section">
-        <!-- h2 or h3 or h4? -->
-        <h3 class="contact__heading">
-          Ready to spec <span class="contact__heading-vulcan">vulcan</span> for
-          your project?
-        </h3>
-        <p class="contact__button btn-blue"><a href="#">Contact us</a></p>
+      <div class="findandcontact-container wave-section">
+        <article class="find">
+          <!-- h2 or h3 or h4? -->
+          <div class="find-text-container">
+            <h3 class="find__heading">
+              Installed in
+              <span class="find__heading-city-near-you">a city near you</span>
+            </h3>
+            <p class="find__button">
+              <a class="find__button__anchor btn-blue" href="#"
+                >Find a vulcan install</a
+              >
+            </p>
+          </div>
+        </article>
+
+        <article class="contact">
+          <!-- h2 or h3 or h4? -->
+          <div class="contact-text-container">
+            <h3 class="contact__heading">
+              Ready to spec
+              <span class="contact__heading-vulcan">vulcan</span> for your
+              project?
+            </h3>
+            <p class="contact__button btn-blue"><a href="#">Contact us</a></p>
+          </div>
+        </article>
         <div class="wave light-blue-wave">
           <div class="wave-img-light-blue"></div>
         </div>
-      </article>
-      <!-- </section> -->
-      <!-- <div class="wave light-blue-wave">
-      <div class="wave-img"></div>
-    </div> -->
+      </div>
     </main>
 
+    <!-- <footer class="footer wave-section"> -->
     <footer class="footer">
+      <!-- <div class="wave light-blue-wave">
+        <div class="wave-img-light-blue"></div>
+      </div> -->
+      <!-- <div class="footer-container1"> -->
       <div class="footer__logo">
         <img
           src="images/logo-white-vulcan.svg"
@@ -355,44 +361,39 @@
           class="footer__logo__vulcan-logo"
         />
       </div>
-      <nav class="footer__nav">
-        <ul class="footer__links">
-          <li class="footer__link footer__link-facebook">
-            <a href="https://www.facebook.com">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-          </li>
-          <li class="footer__link footer__link-linkedin">
-            <a href="https://www.linkedin.com">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="footer__link footer__link-number">
-            <i class="fa-sharp fa-solid fa-phone"></i>
-            <a href="tel:712-642-2755">+1 712-642-2755</a>
-          </li>
-          <li class="footer__link footer__link-mail">
-            <i class="fa-sharp fa-solid fa-envelope"></i>
-            <a
-              href="mailto:mvillamartin@my.bcit.ca"
-              target="_blank"
-              rel="noopener"
-            >
-              Contact Us
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <p class="footer__copyright">Copyright 2017. All Right Reserved</p>
-      <!-- <div class="lab">
-        <div class="your-class">
-          <div><h1>Thing 1</h1></div>
-          <div><h1>Thing 2</h1></div>
-          <div><h1>Thing 3</h1></div>
-        </div>
-      </div> -->
+      <!-- </div> -->
+      <div class="footer-container2">
+        <nav class="footer__nav">
+          <ul class="footer__links">
+            <li class="footer__link footer__link-facebook">
+              <a href="https://www.facebook.com">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li class="footer__link footer__link-linkedin">
+              <a href="https://www.linkedin.com">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="footer__link footer__link-number">
+              <i class="fa-sharp fa-solid fa-phone"></i>
+              <a href="tel:712-642-2755">+1 712-642-2755</a>
+            </li>
+            <li class="footer__link footer__link-mail">
+              <i class="fa-sharp fa-solid fa-envelope"></i>
+              <a
+                href="mailto:mvillamartin@my.bcit.ca"
+                target="_blank"
+                rel="noopener"
+              >
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <p class="footer__copyright">Copyright 2017. All Right Reserved</p>
+      </div>
     </footer>
-    <!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
     <!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
     <script src="scripts/libs/jquery/jquery-3.6.0.min.js"></script>
     <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->

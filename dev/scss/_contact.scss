@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "mixins" as *;
 
 .newsletter {
   background-color: $brand-color-light;
@@ -17,7 +18,8 @@
     gap: 0.5rem;
   }
 
-  //If time find out how to use the descendant selector not to
+  //If time find out how to use the descendant selector
+  // here not to
   //repeat the border none.
 
   input {
@@ -36,17 +38,6 @@
     grid-column: 2/-1;
     font-weight: 700;
     font-size: 1.2rem;
-  }
-}
-
-@media (min-width: 47.8em) {
-  .newsletter {
-    display: flex;
-    &__heading {
-    }
-
-    &__video {
-    }
   }
 }
 
@@ -85,6 +76,7 @@
 
     &__anchor {
       color: $grey;
+      text-decoration: none;
     }
   }
 }
@@ -94,14 +86,14 @@
   padding: $default-padding 4rem 11rem 4rem;
   //   padding: 10rem 4rem;
   // position: relative;
-  // z-index: -1;
+  z-index: -1;
 
   &__heading {
     color: $color-white;
     text-transform: uppercase;
     font-size: $heading-title;
     text-align: center;
-    padding-bottom: 3rem;
+    padding-bottom: 0.5rem;
 
     &-vulcan {
       display: block;
@@ -120,5 +112,66 @@
   &__button a {
     color: $color-white;
     text-decoration: none;
+  }
+}
+
+@include mq(530) {
+  .newsletter {
+    &-form {
+      padding: 0 2rem;
+    }
+  }
+}
+
+@include mq(768) {
+  .newsletter {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // gap: 1rem;
+    display: grid;
+    // grid-template-columns: 2fr 2fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    padding: 1rem 0;
+    &-form {
+      padding: 0 0.2rem;
+    }
+    & form.newsletter-form {
+      grid-column: 2/-1;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // gap: 1rem;
+    }
+    &__heading {
+      grid-column: 1/2;
+      padding-bottom: 0;
+    }
+  }
+}
+
+@include mq(768) {
+  .findandcontact-container {
+    // display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .find {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .contact,
+  .find {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
