@@ -1,30 +1,24 @@
 @use "variables" as *;
 @use "mixins" as *;
 
-// footer
 .footer {
   color: $color-white;
   background-color: $brand-color;
-  // background-color: red;
   z-index: -1;
 
   text-transform: uppercase;
 
   &__logo {
     display: flex;
-    align-items: center;
     justify-content: center;
 
     &__vulcan-logo {
-      // width: 25%;
       width: 7rem;
     }
   }
-  // background-position: right 20px top 0% / 30% auto;
 
   &__nav {
     padding: 2.5rem 1rem 1rem 1rem;
-    // padding: 10rem;
   }
 
   &__links {
@@ -33,17 +27,20 @@
     align-items: center;
     justify-content: center;
     list-style-type: none;
+
+    &-logo-container {
+      display: flex;
+      gap: 1rem;
+    }
   }
 
   &__links a {
     text-decoration: none;
-    // color: var($color-white);
-    color: white;
+    color: $color-white;
   }
 
   &__links i {
-    // color: var($color-white);
-    color: white;
+    color: $color-white;
   }
 
   &__copyright {
@@ -62,7 +59,6 @@
     &__logo {
       width: 7rem;
       justify-self: start;
-      // align-self: start;
       margin-left: 3rem;
     }
   }
@@ -70,15 +66,30 @@
 
 @include mq(1235) {
   .footer {
-    // display: grid;
     grid-template-columns: 1fr 2fr;
+    padding: 2rem;
+
+    &__nav {
+      padding: 0 2rem 0 0;
+    }
+
+    &__links {
+      gap: 2rem;
+    }
 
     &__logo {
       grid-column: 1;
     }
     &-container2 {
-      display: flex;
       grid-column: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__copyright {
+      padding-bottom: 0;
+      align-self: center;
     }
   }
 }
