@@ -13,7 +13,7 @@
   .wave-img {
     position: absolute;
     width: 115%;
-    left: -19px;
+    left: -9px;
     bottom: -35px;
     height: 100%;
     background-repeat: no-repeat;
@@ -23,28 +23,18 @@
   .wave-img-white {
     position: absolute;
     width: 115%;
-    left: -19px;
+    left: -9px;
     bottom: -76px;
     height: 100%;
     background-repeat: no-repeat;
     background-image: url(../images/wave-white.png);
     background-size: 160% 87%;
   }
-  // .wave-img-light-blue {
-  //   position: absolute;
-  //   width: 160%;
-  //   left: -203px;
-  //   bottom: -37px;
-  //   height: 100%;
-  //   background-repeat: no-repeat;
-  //   background-image: url(../images/wave-blue-light.png);
-  //   background-size: 170% 77%;
-  // }
 
   .wave-img-light-blue {
     position: absolute;
     width: 160%;
-    left: -183px;
+    left: -166px;
     bottom: -90px;
     height: 100%;
     background-repeat: no-repeat;
@@ -58,7 +48,6 @@
       width: 120%;
       left: 0;
       bottom: 0;
-      //height: 100%;
       background-position: bottom left;
       background-size: 110% 70%;
     }
@@ -66,22 +55,13 @@
       width: 120%;
       left: 0;
       bottom: -49px;
-      //height: 100%;
       background-position: bottom left;
       background-size: 110% 70%;
     }
-    // .wave-img-light-blue {
-    //   width: 120%;
-    //   left: 0;
-    //   bottom: 0;
-    //   //height: 100%;
-    //   background-position: bottom left;
-    //   background-size: 110% 70%;
-    // }
+
     .wave-img-light-blue {
       width: 120%;
       left: 0;
-      // bottom: -2494px;
       bottom: -40px;
       background-position: bottom left;
       background-size: 95% 70%;

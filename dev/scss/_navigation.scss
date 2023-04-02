@@ -2,14 +2,10 @@
 @use "mixins" as *;
 
 .header {
-  margin-bottom: 10rem;
+  margin-bottom: 1rem;
   height: 624px;
   position: relative;
 }
-
-// @include mq(768) {
-
-// }
 
 .header {
   &__logo {
@@ -152,17 +148,6 @@
 @include mq(768) {
   .header {
     position: relative;
-
-    // &__links {
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
-
-    //   a {
-    //     align-self: center;
-    //   }
-    // }
-
     &__logo {
       display: flex;
       justify-content: center;

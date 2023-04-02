@@ -33,7 +33,6 @@
   </head>
   <body>
     <!-- Put your HTML code here... -->
-    <!-- <section class="hero"> -->
     <header class="header">
       <div class="header__mobile">
         <div class="header__link-top-links">
@@ -119,10 +118,10 @@
             <span>indestructible wastewater screens. </span>Enough said.
           </h1>
           <div class="hero__button-box">
-            <p class="hero__button hero__button__view-products btn-transparent">
+            <p class="hero__button hero__button__view-products">
               <a href="#">View Products</a>
             </p>
-            <p class="hero__button hero__button__view-services btn-transparent">
+            <p class="hero__button hero__button__view-services">
               <a href="#">View Services</a>
             </p>
           </div>
@@ -133,7 +132,6 @@
       </div>
     </header>
 
-    <!-- </header> -->
     <main>
       <section class="machines wave-section">
         <h2>Customized Per Order</h2>
@@ -294,10 +292,9 @@
             cities and communities throughout the world.</span
           >
         </h3>
-        <p class="about__button btn-transparent"><a href="#">About us</a></p>
+        <p class="about__button"><a href="#">About us</a></p>
       </section>
 
-      <!-- Not sure if to put a section here or if to have articles. what's semantically correct. Will ahve to check the entire HTML to make sure we are right -->
       <section class="about__video">
         <div class="about__video__container">
           <iframe
@@ -307,7 +304,7 @@
           ></iframe>
         </div>
       </section>
-      <!-- <section class="contact"> -->
+
       <article class="newsletter">
         <p class="newsletter__heading">
           Stay in the know. Sign up for our newsletter.
@@ -325,29 +322,25 @@
       </article>
       <div class="findandcontact-container wave-section">
         <article class="find">
-          <!-- h2 or h3 or h4? -->
           <div class="find-text-container">
-            <h3 class="find__heading">
+            <h2 class="find__heading">
               Installed in
               <span class="find__heading-city-near-you">a city near you</span>
-            </h3>
+            </h2>
             <p class="find__button">
-              <a class="find__button__anchor btn-blue" href="#"
-                >Find a vulcan install</a
-              >
+              <a class="find__button__anchor" href="#">Find a vulcan install</a>
             </p>
           </div>
         </article>
 
         <article class="contact">
-          <!-- h2 or h3 or h4? -->
           <div class="contact-text-container">
-            <h3 class="contact__heading">
+            <h2 class="contact__heading">
               Ready to spec
               <span class="contact__heading-vulcan">vulcan</span> for your
               project?
-            </h3>
-            <p class="contact__button btn-blue"><a href="#">Contact us</a></p>
+            </h2>
+            <p class="contact__button"><a href="#">Contact us</a></p>
           </div>
         </article>
         <div class="wave light-blue-wave">
@@ -356,12 +349,7 @@
       </div>
     </main>
 
-    <!-- <footer class="footer wave-section"> -->
     <footer class="footer">
-      <!-- <div class="wave light-blue-wave">
-        <div class="wave-img-light-blue"></div>
-      </div> -->
-      <!-- <div class="footer-container1"> -->
       <div class="footer__logo">
         <img
           src="images/logo-white-vulcan.svg"
@@ -369,25 +357,26 @@
           class="footer__logo__vulcan-logo"
         />
       </div>
-      <!-- </div> -->
       <div class="footer-container2">
         <nav class="footer__nav">
           <ul class="footer__links">
-            <li class="footer__link footer__link-facebook">
-              <a href="https://www.facebook.com">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-            </li>
-            <li class="footer__link footer__link-linkedin">
-              <a href="https://www.linkedin.com">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-            </li>
-            <li class="footer__link footer__link-number">
+            <div class="footer__links-logo-container">
+              <li class="footer__link-facebook">
+                <a href="https://www.facebook.com">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li class="footer__link-linkedin">
+                <a href="https://www.linkedin.com">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+            </div>
+            <li class="footer__link-number">
               <i class="fa-sharp fa-solid fa-phone"></i>
               <a href="tel:712-642-2755">+1 712-642-2755</a>
             </li>
-            <li class="footer__link footer__link-mail">
+            <li class="footer__link-mail">
               <i class="fa-sharp fa-solid fa-envelope"></i>
               <a
                 href="mailto:mvillamartin@my.bcit.ca"

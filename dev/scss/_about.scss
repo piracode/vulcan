@@ -1,11 +1,6 @@
 @use "variables" as *;
 @use "mixins" as *;
 
-//About us and contact button us could be a mixins. (font size 1.2 which is the same font size for the submit btton)
-//I wonder if Submit and find my products could be one too even if not the same look
-
-//Remember the cursor pointer on each button or someting with an action
-
 .about {
   padding-bottom: $default-padding;
   text-align: center;
@@ -29,13 +24,9 @@
   }
 
   &__button {
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: 900;
+    @include button;
     border: 2px solid $color-white;
-    width: fit-content;
     padding: 0.75rem 2rem;
-    margin: 0 auto;
   }
 
   &__button a {
@@ -51,15 +42,12 @@
       justify-content: center;
       align-items: center;
       aspect-ratio: 16/9;
-      // width: 100%;
-      // height: 100%;
     }
 
     iframe {
       border: 1.2rem solid $brand-color-dark;
       background-color: #045404;
       width: 85%;
-      // height: 90%;
     }
   }
 }
@@ -68,8 +56,7 @@
   .about {
     &__video {
       padding: 3rem 4rem;
-      &__container {
-      }
+
       iframe {
         border: 1rem solid $brand-color-dark;
         // width: 91%;
@@ -107,7 +94,6 @@
       padding: 8rem 12rem 0 12rem;
     }
     &__subheading {
-      // padding-bottom: 4rem;
       padding: 2rem 14rem 4rem 14rem;
     }
     &__heading {

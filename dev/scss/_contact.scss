@@ -18,10 +18,6 @@
     gap: 0.5rem;
   }
 
-  //If time find out how to use the descendant selector
-  // here not to
-  //repeat the border none.
-
   input {
     border: none;
     padding: 0.7rem 1rem;
@@ -47,11 +43,9 @@
   background-position: center;
   height: 100%;
   width: 100%;
-  // padding: $default-padding;
   padding: 5rem;
   text-align: center;
 
-  // Do line break for the heading
   &__heading {
     text-transform: uppercase;
     font-size: $heading-title;
@@ -64,15 +58,9 @@
   }
 
   &__button {
-    //create a MIXIN for the button
-    //Create a mixin for the headiongs
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: 900;
-    border: 1px solid $grey;
-    width: fit-content;
+    @include button;
     padding: 0.75rem 1rem;
-    margin: 0 auto;
+    border: 1px solid $grey;
 
     &__anchor {
       color: $grey;
@@ -84,8 +72,6 @@
 .contact {
   background-color: $brand-color-dark;
   padding: $default-padding 4rem 11rem 4rem;
-  //   padding: 10rem 4rem;
-  // position: relative;
   z-index: -1;
 
   &__heading {
@@ -101,17 +87,14 @@
   }
 
   &__button {
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: 900;
-    border: 2px solid $color-white;
-    width: fit-content;
+    @include button;
     padding: 0.75rem;
-    margin: 0 auto;
+    border: 2px solid $color-white;
   }
   &__button a {
     color: $color-white;
     text-decoration: none;
+    cursor: pointer;
   }
 }
 
@@ -125,12 +108,7 @@
 
 @include mq(768) {
   .newsletter {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // gap: 1rem;
     display: grid;
-    // grid-template-columns: 2fr 2fr 1fr;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
     padding: 1rem 0;
@@ -139,10 +117,6 @@
     }
     & form.newsletter-form {
       grid-column: 2/-1;
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
-      // gap: 1rem;
     }
     &__heading {
       grid-column: 1/2;
@@ -153,18 +127,31 @@
 
 @include mq(768) {
   .findandcontact-container {
-    // display: flex;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
   .contact {
     grid-column: 1;
     grid-row: 1;
+
+    &__button {
+      background-color: $brand-color;
+      border: none;
+    }
   }
 
   .find {
     grid-column: 2;
     grid-row: 1;
+
+    &__button {
+      background-color: $brand-color;
+      border: none;
+
+      &__anchor {
+        color: $color-white;
+      }
+    }
   }
 
   .contact,
@@ -173,5 +160,23 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@include mq(850) {
+  .newsletter {
+    padding: 1rem 2.8rem;
+  }
+}
+
+@include mq(1000) {
+  .newsletter {
+    padding: 1rem 8rem;
+  }
+}
+
+@include mq(1440) {
+  .newsletter {
+    padding: 1rem 16rem;
   }
 }
